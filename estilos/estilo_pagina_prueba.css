@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    
+   
+
+}
+header{
+    background-color: #2E2734;
+    overflow: hidden;
+}
+
+.navigationBar ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+    overflow: hidden;
+    background-color:#e6d8e8fa;
+  
+    -webkit-box-shadow: 1px 6px 14px 0px rgba(0,0,0,0.65); 
+box-shadow: 1px 6px 14px 0px rgba(0,0,0,0.65);
+}
+.navigationBar li{
+    float: left;
+
+}
+.navigationBar li a{
+    display: block;
+    color: #2E2734;
+    text-align: center;
+    padding: 15px;
+    
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bolder;
+    border-right: #2E2734 2px dotted;
+}
+
+.navigationBar li a:hover{
+    color: #2e2734b0;
+    border-right: #2E2734 2px solid;
+    transition: .8s;
+    
+
+
+}
+main{
+    margin:10px;
+    padding: 10px;
+}
+
+.navSecundary li{
+    list-style-type: none;
+    
+    
+   
+
+}
+
+.navSecundary a{
+    
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    
+
+}
+.cardAside{
+    
+	padding: 0px;
+    position: sticky;
+    top: 0;
+}
+
+.cardShare{
+    -webkit-box-shadow: -1px 6px 16px 1px rgba(0,0,0,0.58); 
+    box-shadow: -1px 6px 16px 1px rgba(0,0,0,0.58);
+    border-radius: 2px;
+    padding: 30px;
+    background-image: url(https://previews.123rf.com/images/javarman/javarman2003/javarman200300005/143528809-old-white-paper-texture-background-nice-high-resolution-background-.jpg);
+    font-family: 'Qwitcher Grypen', cursive;
+
+}
+.cardSectionaside{
+    margin-top: 10px;
+    -webkit-box-shadow: -1px 6px 16px 1px rgba(0,0,0,0.58); 
+    box-shadow: -1px 6px 16px 1px rgba(0,0,0,0.58);
+    border-radius: 2px;
+    padding: 30px;
+    background-image: url(https://previews.123rf.com/images/javarman/javarman2003/javarman200300005/143528809-old-white-paper-texture-background-nice-high-resolution-background-.jpg);
+    font-family: 'Qwitcher Grypen', cursive;
+    
+}
+
+.cardImageaside{
+    border: 1px black dashed;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.cardImageaside:hover{
+    border: 2px black dashed;
+    margin-bottom: 5px;
+
+}
+
+
+.cardImageaside h3{
+    text-align: center;
+    border-bottom: 1px black dashed;
+}
+
+.cardShare a{
+    color: black;
+
+}
+.cardShare a:hover{
+    color: white;
+}
+.cardPrincipal{
+    -webkit-box-shadow: -1px 6px 16px 1px rgba(0,0,0,0.58); 
+    box-shadow: -1px 6px 16px 1px rgba(0,0,0,0.58);
+    border-radius: 2px;
+    padding: 30px;
+    background-image: url(https://previews.123rf.com/images/javarman/javarman2003/javarman200300005/143528809-old-white-paper-texture-background-nice-high-resolution-background-.jpg);
+    
+    
+
+}
+.cardPrincipal h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Qwitcher Grypen', cursive;
+    line-height:60%;
+    color: black;
+
+}
+.cardPrincipal i{
+    font-size: 25px;
+    margin-left: 5px;
+    
+
+}
+
+.cardPrincipal h3{
+   
+    font-size: 35px;
+    font-family: 'Qwitcher Grypen', cursive;
+   
+    color: black;
+
+}
+
+.cardPrincipal p{
+   
+    font-size: 20px;
+    font-family: 'Calligraffitti', cursive;
+    font-weight: 550;
+    color: black;
+    font-weight: 500;
+}
+.cardPrincipal hr{
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+
+}
+.cardPrincipal hr:before{
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+
+}
+
+.cardIndice{
+    float: left;
+    margin: 5px;
+    border:grey 1px solid ;
+    background-color: lightgray;
+    border-radius: 2px;
+    position: relative;
+   
+}
+
+.cardIndice  > ul{
+    padding-left: 20px;
+    padding-right: 10px;
+    
+   
+    list-style-type: decimal;
+}
+.cardIndice li{
+    color: black;
+    
+
+
+}
+.cardIndice a{
+    text-decoration: none;
+    color: black;
+    
+}
+.cardIndice a:hover{
+    text-decoration: underline;
+}
+.containerImage{
+    position: relative;
+    float: right;
+   /*  display: flex;
+    justify-content: space-around; */
+}
+
+/* .cardImage:nth-of-type(1){
+    background-color: red;
+    background-image: url(https://w7.pngwing.com/pngs/548/461/png-transparent-greek-frame-decorative-border-decor-decoration-thumbnail.png);
+    width: 360px;
+    height: 482px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.cardImage:nth-of-type(2){
+    background-color: red;
+    background-image: url(https://w7.pngwing.com/pngs/548/461/png-transparent-greek-frame-decorative-border-decor-decoration-thumbnail.png);
+    width: 360px;
+    height: 482px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} */
+.cardImage2{
+    position: relative;
+    float: left;
+}
+.cardImage3{
+    position: relative;
+    float: right;
+}
+
+/* slide */
+
+
+.dot {
+    height: 5px;
+    width: 5px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+/* /slide */
+  
+
+
+footer{
+    background-color: #2E2734;
+    height: 70px;
+    
+}
+
+
+
+
+
+
+
+
+

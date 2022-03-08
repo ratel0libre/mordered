@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+header{
+    height: 120px;
+    background: rgb(242,234,13);
+background: linear-gradient(90deg, rgba(242,234,13,1) 0%, rgba(19,121,9,1) 41%, rgba(23,255,0,1) 100%);
+}
+
+.contenedor__encabezado{
+    display: flex;
+    justify-content: center;
+    
+
+
+}
+
+.contenedor__encabezado h1{
+    color: white;
+    font-size: 60px;
+    font-family: 'Schoolbell', cursive;
+
+
+}
+.barra__navegacion{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.barra__navegacion a[class^="enlace"]{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.barra__navegacion a[class^="enlace"]:hover{
+    color: yellow;
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.barra__lateral{
+    width: 10%;
+    height: 120px;
+    position: sticky;
+    top: 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: yellow;
+    
+
+}
+.barra__lateral h1{
+    text-align: center;
+    color: black;
+    font-family: impact;
+
+}
+.barra__lateral img{
+    width: 150px;
+    height: 100px;
+}
+
+.tabla__periodica{
+    width: 82%;
+    height: 600px;
+    
+    margin-top: 20px;
+    overflow: hidden;
+    
+
+}
+.abuelo{
+    display: flex;
+    flex-direction: row;
+    
+   
+    
+    
+
+}
+
+.padre{
+    height: 600px;
+    width: 64px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px green;
+    overflow: hidden;
+    text-align: end;
+    font-weight: bold;
+}
+
+div[class^="hijo"]{
+    background-color: lightcoral;
+    height: 80px;
+    
+    border: white solid 1px;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+div[class^="hijo"]:hover{
+    background-color: red;
+}
+
+div[class^="hijo"] h2{
+    margin-top: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+div[class^="hijo"] p{
+    text-align: center;
+}
+
+.padre2 div[class^="hijo"]:nth-child(1){
+    background-color: white;
+    color: white;
+
+}
+.padre3 div[class^="hijo"]:nth-child(1),.padre3 div[class^="hijo"]:nth-child(2),.padre3 div[class^="hijo"]:nth-child(3){
+    background-color: white;
+    color: white;
+
+}
+.padre4 div[class^="hijo"]:nth-child(1),.padre4 div[class^="hijo"]:nth-child(2),.padre4 div[class^="hijo"]:nth-child(3){
+    background-color: white;
+    color: white;
+
+}
+.padre5 div[class^="hijo"]:nth-child(1),.padre5 div[class^="hijo"]:nth-child(2),.padre5 div[class^="hijo"]:nth-child(3){
+    background-color: white;
+    color: white;
+
+}
+.padre6 div[class^="hijo"]:nth-child(1),.padre6 div[class^="hijo"]:nth-child(2),.padre6 div[class^="hijo"]:nth-child(3){
+    background-color: white;
+    color: white;
+
+}
+.padre7 div[class^="hijo"]:nth-child(1),.padre7 div[class^="hijo"]:nth-child(2),.padre7 div[class^="hijo"]:nth-child(3){
+    background-color: white;
+    color: white;
+
+}
+.padre8 div[class^="hijo"]:nth-child(1),.padre8 div[class^="hijo"]:nth-child(2),.padre8 div[class^="hijo"]:nth-child(3){
+    background-color: white;
+    color: white;
+
+}
+.padre9 div[class^="hijo"]:nth-child(1),.padre9 div[class^="hijo"]:nth-child(2),.padre9 div[class^="hijo"]:nth-child(3){
+    background-color: white;
+    color: white;
+
+}
+.padre10 div[class^="hijo"]:nth-child(1),.padre10 div[class^="hijo"]:nth-child(2),.padre10 div[class^="hijo"]:nth-child(3){
+    background-color: white;
+    color: white;
+
+}
+.padre11 div[class^="hijo"]:nth-child(1),.padre11 div[class^="hijo"]:nth-child(2),.padre11 div[class^="hijo"]:nth-child(3){
+    background-color: white;
+    color: white;
+
+}
+.padre12 div[class^="hijo"]:nth-child(1),.padre12 div[class^="hijo"]:nth-child(2),.padre12 div[class^="hijo"]:nth-child(3){
+    background-color: white;
+    color: white;
+
+}
+.padre13 div[class^="hijo"]:nth-child(1){
+    background-color: white;
+    color: white;
+
+}
+.padre14 div[class^="hijo"]:nth-child(1){
+    background-color: white;
+    color: white;
+
+}
+.padre15 div[class^="hijo"]:nth-child(1){
+    background-color: white;
+    color: white;
+
+}
+.padre16 div[class^="hijo"]:nth-child(1){
+    background-color: white;
+    color: white;
+
+}
+.padre17 div[class^="hijo"]:nth-child(1){
+    background-color: white;
+    color: white;
+
+}
+footer{
+    height: 200px;
+    background-color: rgb(10, 39, 10);
+    display: flex;
+    justify-content: center;
+}
+
+footer div{
+    margin-top: 100px;
+    color: white;
+}

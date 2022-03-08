@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/286b7e7657.js" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .formulario{
+            padding: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 600px;
+            height: auto;
+            border: lightgray solid 1px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+        label{
+            
+            display: block;
+            font-size: 20px;
+            color: grey;
+            
+            
+            
+        }
+         .input{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            width: 400px;
+            height: 30px;
+            margin-top: 20px;
+            font-style: oblique;
+            color: gray;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+            
+        }
+        .input:focus{
+           
+         outline: unset;
+         border: 1px solid gray;
+         
+
+
+        }
+
+        .boton{
+            width: 100px;
+            height: 30px;
+            font-size: 15px;
+            border: solid grey 1px;
+            border-radius: 5px;
+            background-color: grey;
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+        .boton:hover{
+            background-color: #3a3939;
+            color: white;
+           
+        }
+        .radios{
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 400px;
+            
+            
+           
+        }
+
+        .radios p{
+            display: block;
+            font-style: italic;
+            
+            
+            
+        }
+
+        .radios p label{
+            font-size: 15px;
+        }
+
+        .radios p label input{
+            accent-color: gray;
+           
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <section>
+        <div class="formulario">
+      <form name="formulario" action="php/procesar.php" method="get">
+    <p><label for=""><i class="fa fa-solid fa-user"></i> Nombre:<input class="input" type="text" name="nombre" id="nombre" value="Escribe tu Nombre"></label></p>
+    <!-- <p><label for="">Edad:<input class="input" type="number" name="edad" min="13" max="100" id="edad"></label></p> -->
+    <p><label for=""><i class="fa fa-solid fa-calendar-day"></i> Edad:</label></p>
+    <div class="radios">
+        <p><label for=""><input class="radio" type="radio" name="edad" id="" value="15"> 15 Años</label></p>
+        <p><label for=""><input class="radio" type="radio" name="edad" id="" value="30"> 30 Años</label></p>
+        <p><label for=""><input class="radio" type="radio" name="edad" id="" value="45"> 45 Años</label></p>
+        <p><label for=""><input class="radio" type="radio" name="edad" id="" value="60"> 60 Años</label></p>
+    </div>
+
+    <div class="radios">
+        <p><label for=""><input type="checkbox" name="edad" id="" value="15" checked> 15 Años</label></p>
+        <p><label for=""><input type="checkbox" name="edad" id="" value="30" checked> 30 Años</label></p>
+        <p><label for=""><input type="checkbox" name="eada" id="" value="45"> 45 Años</label></p>
+        <p><label for=""><input type="checkbox" name="edad" id="" value="60"> 60 Años</label></p>
+    </div>
+    <p><label for=""><i class=" fa fa-solid fa-brush"></i> Color:<input class="input" type="color" name="color" id="" value="hola"></label></p>
+    <p><label  for="">Fercha:<input class="input" type="date" name="fecha" id="fecha" value="2022-03-07"></label></p>
+    <p><label for="">Correo:<input class="input" type="email" name="correo" id="email" value="Email"></label></p>
+    <p><label for="">Telefono:<input class="input" type="tel" name="" id="telefono" value="Telefono" ></label></p>
+    <p><label for="">Sitio Web:<input class="input" type="url" name="" id="web" value="Escribe aqui" cols="50" rows="6" ></label></p>
+    <p><label for="">Texto: <textarea class="input" name="texto" id="" cols="50" rows="6"></textarea> </label></p>
+      <p><input class="boton" type="submit" value="Enviar Datos" /></p>
+      <p><button type="reset">Boton</button></p>
+    </form>
+    </div>
+    </section>
+  </body>
+</html>

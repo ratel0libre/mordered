@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/prism.css">
+  
+    
+    
+    <title>Educación Libre | clase 6</title>
+</head>
+<body>
+
+    <h1>Educación Libre</h1>
+
+    <h2>Clase 6</h2>
+    
+
+<p>Para crear un enlace que se abra en el programa de correo electronico del usuario ( para permitirle enviar un nuevo correo electronico),use mailto:
+    dentro del atributo href:
+</p>
+
+
+
+<div>
+<h3>Codigo Fuente HTML</h3>
+    <pre>
+        <code class="language-html">
+&lt;!DOCTYPE html>
+&lt;html lang="es-ES">&lt;!-- Aqui va el lenguaje asignado -->
+&lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &lt;link rel="stylesheet" href="estilos/style.css">
+    &lt;title>Educación Libre&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;h1>Educación Libre&lt;/h1>
+    &lt;h2>Enlace de dirección de correo electrónico &lt;/h2>
+    &lt;p>
+        &lt;b>Para crear un enlace que se abra en el programa de correo electrónico 
+            del usuario(para permitirle enviar un nuevo correo electrónico),use mailto: dentro del atributo href:
+        &lt;/b>
+    &lt;/p>
+    &lt;i>&lt;a href="mailto:gemma.mordered@gmail.com">Enviar a correo&lt;/a>&lt;/i>
+&lt;/body>
+&lt;/html>
+        </code>
+    </pre>
+<h3>Codigo Fuente CSS</h3>
+    <pre>
+        <code class="language-css">
+            body{
+                padding-left: 20px;
+                padding-right: 20px;
+             }
+             h1{
+                 background-color: red;
+                 color: white;
+                 font-family: impact;
+                 font-size: 50px;
+                 text-align: center;
+                 letter-spacing: 4px;
+                 
+             }
+             div{
+                 
+                 height: auto;
+                 
+                 word-wrap: break-word;
+                 background-color: rgba(201, 201, 201, 0.692);
+                 padding: 20px;
+             }
+             a:link,a:visited{
+                 background-color: red;
+                 font-family: monospace;
+                 font-weight: bold;
+                 color: white;
+                 padding: 20px 30px;
+                 text-decoration: none;
+                 display: inline-block;
+             
+             }
+             a:hover,a:active{
+                 background-color: white;
+                 color: red;
+                 border: 2px solid red;
+             }
+        </code>
+    </pre>
+</div>
+
+
+<p><a href="Clase6_ejecuta.html#E1">Ejecutar Programa</a></p>
+
+
+
+
+    <script src="js/prism.js"></script>
+</body>
+</html>

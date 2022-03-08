@@ -1,0 +1,107 @@
+:root{
+    --circle-left-px:215px;
+    --circle-var-px:140px;
+}
+main{
+   background-color: black;
+}
+
+.master{
+    height: 1100px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+div[class^="slave"]{
+    background-color: #2c2c2c;
+    height: 200px;
+    width: auto;
+    border: 2px solid rgb(27, 27, 27);
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+    
+}
+div[class*="sub__"]{
+    background-color: lightcoral;
+    width: 130px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+    
+}
+.arrow{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 40px;
+    color: #181717;
+    font-weight: bold;
+
+    
+}
+div[class*="sub__"]:not(:first-child){
+    background-color: #2c2c2c;
+    height: 180px;
+    margin: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+div[class^="circle"]{
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    
+    position: absolute;
+    left: 215px;
+    top: 40px;
+    overflow: hidden;
+    
+}
+div.circle2{
+    left: calc(var(--circle-left-px) + var(--circle-var-px));
+}
+div.circle3{
+    left: calc(var(--circle-left-px) + (var(--circle-var-px) * 2));
+
+}
+div.circle4{
+    left:calc(var(--circle-left-px) + var(--circle-var-px) * 3);
+
+}
+
+div[class^="photo"]{
+    background-color: #202020;
+    width: 100px;
+    height: 100px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: hidden;
+    -webkit-box-shadow: 5px 1px 15px 5px #000000; 
+box-shadow: 5px 1px 15px 5px #000000;
+}
+
+p[class^="name"]{
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+}
+p[class^="job"]{
+    margin-top: 15px;
+
+    text-align: center;
+    color: white;
+
+
+    
+}
+    
+

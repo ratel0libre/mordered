@@ -1,0 +1,32 @@
+#cajapadre {
+display: flex;
+width: 600px;
+}
+#cajapadre > div {
+height: 145px;
+margin: 5px;
+background-color: #CCCCCC;
+}
+#caja-1 {
+width: 200px;
+flex: 1 1 auto;
+}
+#caja-2 {
+width: 100px;
+flex: 1 1 auto;
+}
+#caja-3 {
+width: 100px;
+flex: 1 1 auto;
+}
+#caja-4 {
+width: 100px;
+flex: 1 1 auto;
+}
+/*También podemos asignar el valor auto al parámetro flex-basis para pedirle al
+navegador que use el valor de la propiedad width como referencia.*/
+/*cada caja tiene un ancho preferido (width), pero después de que todas
+las cajas quedan posicionadas hay un espacio libre de 100 píxeles. Este espacio extra se
+dividirá entre las cajas flexibles. Para calcular la porción de espacio asignado a cada caja,
+usamos la misma fórmula que antes: 100 × 1 / 4 = 25. Esto significa que se agregan 25 píxeles
+adicionales al tamaño preferido de cada caja (menos los márgenes).*/

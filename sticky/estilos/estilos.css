@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Newsreader:wght@600;800&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&family=Newsreader:wght@600;800&family=Poppins:wght@100&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+   
+    height: 200px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 28%, rgba(0,212,255,1) 100%);
+}
+
+div.header__logo h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    padding-top: 10px;
+
+    
+}
+nav.header__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+   
+ 
+
+    
+
+}
+
+nav.header__nav a{
+    color: white;
+    text-decoration: none;
+    margin: 50px 0px 50px 0px ;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Newsreader', serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+   
+
+}
+nav.header__nav a:hover{
+    color: rgba(10, 10, 10, 0.781);
+    transition: 0.7s;
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+aside{
+    width: 25%;
+    overflow: hidden;
+    
+}
+section{
+    overflow: hidden;
+    width: 70%;
+    border: solid 1px lightslategray;
+    box-shadow: 0px 10px 9px 4px rgba(0,0,0,0.47);
+-webkit-box-shadow: 0px 10px 9px 4px rgba(0,0,0,0.47);
+-moz-box-shadow: 0px 10px 9px 4px rgba(0,0,0,0.47);
+
+}
+.section__principal{
+    padding: 10px;
+}
+.section__principal p{
+    color: grey;
+}
+.section__principal h2{
+    color: black;
+    font-size: 30px;
+    font-family: 'League Gothic', sans-serif;
+}
+.section__principal h3{
+    color: black;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Newsreader', serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+
+}
+
+aside{
+    height: 400px;
+    position: sticky;
+    top: 0px;
+
+}
+.life{
+    height: 50px;
+    background-color: black;
+    border-radius: 1px;
+    padding: 10px;
+}
+.life> h2{
+    color: white;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 25px;
+ 
+}
+
+.life__circle{
+    color: red;
+    
+
+    
+}
+
+footer{
+    margin-top: 30px;
+    height: 200px;
+    background-color: #020024;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+  
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer__links a{
+    margin: auto 0px auto 0px;
+    text-decoration: none;
+    color: white;
+}
+
+
+

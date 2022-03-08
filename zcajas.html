@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cabeza{
+            width: 100%;
+            height: 150px;
+            border: 2px solid blue;
+            background-color: tomato;
+        }
+        #cajalateral{
+            width: 25%;
+            height: 800px;
+            border: 2px solid black;
+            background-color: blue;
+            box-sizing: border-box;
+            float: left;
+          
+        }
+        #cajacentral{
+            
+            width: 75%;
+            height: 800px;
+            border: 2px solid red;
+            background-color: limegreen;
+            float: right;
+            box-sizing: border-box;
+            
+        }
+        #menu{
+            border: 1px solid yellow;
+            width: 100px;
+            height: 300px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0px;
+        }
+        .restaurar{
+            clear: both;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <header id="cabeza">
+        <h1>CAJAS PLUS</h1>
+    </header>
+    <!-- /#cabeza -->
+    <main>
+        <aside id="cajalateral">
+            <div id="menu">
+            <nav><a href="">INICIO</a><br>
+                <a href="">NOTICIAS</a><br>
+                <a href="">FOTOS</a><br>
+                <a href="">CONTACTO</a><br>
+             
+            </nav>
+        </div>
+        </aside>
+        <section id="cajacentral">
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <div class="restaurar"></div>
+    <!-- /.restaurar -->
+    <footer>
+        &copy;Marzo 2022
+    </footer>
+  
+   
+</body>
+</html>

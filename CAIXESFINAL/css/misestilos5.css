@@ -1,0 +1,35 @@
+#cajapadre {
+  display: flex;
+}
+#cajapadre > div {
+  height: 145px;
+  margin: 5px;
+  background-color: #CCCCCC;
+}
+#caja-1 {
+  max-width: 50px;
+  flex: 1;
+}
+#caja-2 {
+  flex: 1;
+}
+#caja-3 {
+  flex: 1;
+}
+#caja-4 {
+  flex: 1;
+}
+
+/*CSS ofrece las siguientes propiedades para poner
+limitaciones al tamaño de una caja.
+max-width—Esta propiedad especifica el ancho máximo permitido para el elemento. Acepta
+valores en cualquiera de las unidades disponibles en CSS, como píxeles o porcentajes.
+min-width—Esta propiedad especifica el ancho mínimo permitido para el elemento. Acepta
+valores en cualquiera de las unidades disponibles en CSS, como píxeles o porcentajes.
+max-height—Esta propiedad especifica la altura máxima permitida para el elemento. Acepta
+valores en cualquiera de las unidades disponibles en CSS, como píxeles o porcentajes.
+min-height—Esta propiedad especifica la altura mínima permitida para el elemento. Acepta
+valores en cualquiera de las unidades disponibles en CSS, como píxeles o porcentajes.
+El siguiente ejemplo declara todas las cajas como flexibles, pero asigna un ancho máximo
+de 50 píxeles al elemento caja-1. Independientemente del espacio disponible, caja-1
+nunca supera los 50 píxeles.*/

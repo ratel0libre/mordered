@@ -1,0 +1,35 @@
+/*Por defecto, las cajas se ordenan desde main-start a main-end (normalmente de
+izquierda a derecha), dejando un espacio libre al final.*/
+
+#cajapadre {
+display: flex;
+width: 600px;
+border: 1px solid;
+/*justify-content: flex-end;*/
+/*justify-content: center;*/
+/*justify-content: space-between*/
+/*justify-content: space-around*/
+}
+ /*Este comportamiento se puede modificar con la propiedad justify-content. El valor
+por defecto asignado a esta propiedad es flex-start, que ordena las cajas de delante hacia 
+atrás dejando un espacio en blanco al final, aunque podemos asignar un valor diferente para 
+personalizar la forma en la que se distribuyen las cajas y el espacio libre. Por ejemplo, 
+el valor flex-end desplaza el espacio al comienzo del contenedor y las cajas hacia el final.*/
+
+#cajapadre > div {
+height: 145px;
+margin: 5px;
+background-color: #CCCCCC;
+}
+#caja-1 {
+width: 100px;
+}
+#caja-2 {
+width: 100px;
+}
+#caja-3 {
+width: 100px;
+}
+#caja-4 {
+width: 100px;
+}

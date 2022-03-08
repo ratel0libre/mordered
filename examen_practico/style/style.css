@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+header{
+    height: 10px;
+    
+    
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #0099ff;
+    
+    
+    
+
+}
+.logo{
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+    
+    font-family: 'Lobster Two', cursive;
+}
+a[class^="link"]{
+    text-decoration: underline;
+    line-height: 40px;
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    
+}
+
+a[class^="link"]:hover{
+    color: black;
+}
+
+main{
+    margin-top: 65px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main aside{
+    width: 20%;
+    height: 150px ;
+    
+   
+    margin-top: 200px;
+ 
+    padding: 5px;
+}
+
+main section{
+    margin-top: -70px;
+    width: 75%;
+    height: 900px;
+    border: solid lightblue 1px;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 13px 5px rgba(140,140,140,0.52); 
+box-shadow: 5px 5px 13px 5px rgba(140,140,140,0.52);
+}
+section h2{
+    margin-top: 80px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: grey;
+}
+
+section .container{
+    margin-top: 100px;
+    height: 400px;
+    width: 1100px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section div[class^="card"]{
+    border: solid lightskyblue 1px;
+    width: 30%;
+    height: 450px;
+    border-radius: 25px;
+    
+    font-family: 'Roboto Condensed', sans-serif;
+
+
+}
+section div[class^="card"] video{
+    
+    max-width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+section div[class^="card"] h3{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: grey;
+
+}
+section div[class^="card"] p{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: lighter;
+    color: grey;
+    text-align: justify;
+    padding: 10px;
+
+}
+
+aside ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+
+}
+aside ul li a{
+    color: gray;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: end;
+    margin-top: 10px;
+
+}
+aside ul li a:hover{
+    color: rgb(84, 82, 82);
+    
+
+}
+
+footer{
+    
+   height: 300px;
+  
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+    background-color: #0099ff;
+    margin-top: -10px;
+}
+ .footer a{
+    
+    color: black;
+
+}
+
+.company{
+    background-color: #0099ff;
+    text-align: center;
+    align-self: center;
+}
+
+.footer a:hover{
+    color: white;
+}
+
+.css-button {
+    margin-left: 100px;
+    margin-top: 10px;
+	font-family: Arial;
+	color: #FFFFFF;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px #0099ff solid;
+	background: linear-gradient(180deg, #63B8EE 5%, #468CCF 100%);
+	text-shadow: 1px 1px 1px #528ecc;
+	box-shadow: inset 1px 1px 2px 0px #bbdaf7;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+}
+.css-button:hover {
+	background: linear-gradient(180deg, #468CCF 5%, #63B8EE 100%);
+}
+.css-button-icon {
+	padding: 10px 10px;
+	border-right: 1px solid rgba(255, 255, 255, 0.16);
+	box-shadow: rgba(0, 0, 0, 0.14) -1px 0px 0px inset;
+}
+.css-button-text {
+	padding: 10px 18px;
+}

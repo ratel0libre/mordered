@@ -1,0 +1,37 @@
+/*Cuando tenemos contenedores con múltiples líneas, es posible que necesitemos alinearlas. CSS
+ofrece la propiedad align-content para alinear líneas de cajas en un contenedor flexible.*/
+
+#cajapadre {
+  display: flex;
+  width: 600px;
+  height: 200px;
+  border: 1px solid;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+/*VALORES:  flex-start, flex-end, center, space-between, space-around y stretch*/
+/*El valor stretch se declara por
+defecto y lo que hace es expandir las líneas para llenar el espacio disponible a menos que se
+haya declarado un tamaño fijo para los elementos.*/
+
+#cajapadre > div {
+  height: 50px;
+  margin: 5px;
+  background-color: #CCCCCC;
+}
+#caja-1 {
+  flex: 1 1 100px;
+}
+#caja-2 {
+  flex: 1 1 100px;
+}
+#caja-3 {
+  flex: 1 1 100px;
+}
+#caja-4 {
+  flex: 1 1 400px;
+}
+/*Aquí, todas las cajas se declaran como flexibles con un ancho y
+una altura inicial de 50 píxeles, y el elemento cajapadre se define como un contenedor de
+múltiples líneas con la propiedad flex-wrap. Esto crea un contenedor flexible con dos líneas,
+similar al del ejemplo anterior, pero con espacio vertical suficiente para experimentar.*/

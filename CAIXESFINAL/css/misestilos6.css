@@ -1,0 +1,49 @@
+#cajapadre {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#cajapadre > div {
+  height: 145px;
+  margin: 5px;
+  background-color: #CCCCCC;
+}
+#caja-1 {
+  flex: 1;
+}
+#caja-2 {
+  flex: 1;
+}
+#caja-3 {
+  flex: 1;
+}
+#caja-4 {
+  flex: 1;
+}
+/*flex-direction—Esta propiedad define el orden y la orientación de las cajas en un
+contenedor flexible. Los valores disponibles son row, row-reverse, column y columnreverse,
+con el valor row configurado por defecto.
+order—Esta propiedad especifica el orden de las cajas. Acepta números enteros que
+determinan la ubicación de cada caja.*/
+/*justify-content—Esta propiedad determina cómo se va a distribuir el espacio libre. Los
+valores disponibles son flex-start, flex-end, center, space-between, y space-around.
+align-items—Esta propiedad alinea las cajas en el eje transversal. Los valores disponibles
+son flex-start, flex-end, center, baseline, y stretch.
+align-self—Esta propiedad alinea una caja en el eje transversal. Trabaja como alignitems
+pero afecta cajas de forma individual. Los valores disponibles son auto, flexstart,
+flex-end, center, baseline, y stretch.
+flex-wrap—Esta propiedad determina si se permiten crear múltiples líneas de cajas. Los
+valores disponibles son nowrap, wrap, y wrap-reverse.
+align-content—Esta propiedad alinea las líneas de cajas en el eje vertical. Los valores disponibles
+son flex-start, flex-end, center, space-between, space-around, y stretch.
+Si lo que necesitamos es configurar la dirección de las cajas, podemos usar la propiedad
+flex-direction. Esta propiedad se asigna al contenedor con un valor que corresponde al
+orden que queremos otorgar al contenido. El valor row declara la orientación de las cajas de
+acuerdo a la orientación del texto (normalmente horizontal) y ordena las cajas desde mainstart
+a main-end (normalmente de izquierda a derecha). El valor row-reverse declara la
+misma orientación que row, pero invierte el orden de los elementos desde main-end a mainstart
+(normalmente de derecha a izquierda). El valor column declara la orientación de acuerdo
+a la orientación en la cual se presentan los bloques de texto (normalmente vertical) y ordena
+las cajas desde main-start a main-end (normalmente de extremo superior a inferior). Y
+finalmente, el valor column-reverse declara la misma orientación que column, pero
+invierte el orden de los elementos desde main-end a main-start (normalmente de extremo
+inferior a superior). El siguiente ejemplo revierte el orden natural de una línea de cajas.*/

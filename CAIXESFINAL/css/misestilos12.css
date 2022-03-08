@@ -1,0 +1,38 @@
+/*Un contenedor flexible puede organizar las cajas en una o varias líneas. La propiedad
+flex-wrap declara esta condición usando tres valores: nowrap, wrap y wrap-reverse. El
+valor nowrap define el contenedor flexible como un contenedor de una sola línea (las líneas
+no se agrupan), el valor wrap define el contenedor como un contenedor de múltiples líneas y
+las ordena desde el extremo cross-start a cross-end, mientras que el valor wrap-reverse
+genera múltiples líneas en orden invertido.*/
+
+#cajapadre {
+  display: flex;
+  width: 600px;
+  border: 1px solid;
+  justify-content: center;
+  flex-wrap: wrap;	/*Debido a que la propiedad flexwrap
+  			se ha declarado con el valor wrap, se crea una nueva línea*/
+  /*flex-wrap:wrap-reverse;*/ /* invierte la situación de las cajas*/
+}
+#cajapadre > div {
+  height: 40px;
+  margin: 5px;
+  background-color: #CCCCCC;
+}
+#caja-1 {
+  width: 100px;
+}
+#caja-2 {
+  width: 100px;
+}
+#caja-3 {
+  width: 100px;
+}
+#caja-4 {
+  flex: 1 1 400px;
+}
+/*El elemento caja-4 se ha declarado como flexible por la propiedad flex, por lo que no
+solo se ubica en una nueva línea, sino que también se expande hasta ocupar todo el espacio
+disponible (el valor de 400 píxeles declarado por el parámetro flex-basis es solo el ancho
+sugerido, no una declaración de tamaño). Aprovechando el espacio libre que deja la última
+caja, las tres primeras cajas quedan alineadas con la propiedad justify-content.*/

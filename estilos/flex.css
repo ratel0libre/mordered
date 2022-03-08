@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: lightgreen;
+
+}
+
+.Header__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: lightcoral;
+    padding: 10px;
+    height: 70px;
+    
+}
+
+.Header__subContainer:nth-of-type(1){
+    border: solid black 2px;
+    height: 50px;
+    width: 70px;
+    font-size: 20px;
+    color: white;
+    order: 1;
+
+}
+.Header__subContainer:nth-of-type(2){
+    border: solid black 2px;
+    height: 50px;
+    width: 70px;
+    font-size: 20px;
+    color: white;
+    order: 2;
+    flex-grow: 0;
+
+}
+.Header__subContainer:nth-of-type(3){
+    border: solid black 2px;
+    height: 50px;
+    width: 70px;
+    font-size: 20px;
+    color: white;
+    order: 3;
+
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+
+}
+aside{
+    border: solid black 2px;
+    width: 20%;
+    height: auto;
+
+}
+section{
+    border: solid black 2px;
+    width: 75%;
+    height: 75%;
+    padding: 2.5%;
+   
+}
+
+img{
+    float:right;
+    width: 40%;
+    height: 60%;
+    border: solid black 2px;
+    
+}
+section > h1{
+    color: darkmagenta;
+}
+h1 + p{
+    font-family: fantasy;
+    color: darkturquoise;
+}
+
+h1 ~ q{
+    color: palevioletred;
+}
+
+p[title="pruebas"]{
+    color: blueviolet;
+}
+figcaption[title~="Galaxia"]{
+    font-size: 20px;
+    color: yellow;
+    float: right;
+}
+
+article[title^="Mis"]{
+    color: deeppink;
+}
+h5[title$="grita"]{
+    color: forestgreen;
+    font-size: 18px;
+
+}
+h6[title*="cabeza"]{
+    color: mistyrose;
+    font-size: 16px;
+}
+
+.div_p p:nth-child(6){
+    font-family: monospace;
+    margin-left: 20px;
+    
+}
+
+.first_child h3:first-child{
+    color: moccasin;
+}
+
+.only_child pre:first-child{
+    color: orange;
+}
+.only_child span:only-child{
+    font-size: 40px;
+}
+
+li:nth-child(odd){
+    color: blue;
+}
+li:nth-child(even){
+    color: darkred;
+}
+.truncate_text{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.lorem p {
+    position: relative;
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+}
+.lorem p::after {
+    content:"...";
+    font-weight:bold;
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding:0 20px 1px 45px;
+    
+   
+}

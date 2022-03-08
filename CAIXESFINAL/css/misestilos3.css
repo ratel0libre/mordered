@@ -1,0 +1,36 @@
+#cajapadre {
+  display: flex;
+}
+#cajapadre > div {
+  height: 145px;
+  margin: 5px;
+  background-color: #CCCCCC;
+}
+
+#caja-1 {
+  flex: 1 1 200px;
+}
+#caja-2 {
+  flex: 1 5 100px;
+}
+#caja-3 {
+  flex: 1 5 100px;
+}
+#caja-4 {
+  flex: 1 5 100px;
+}
+/*Esta vez, se han declarado tres parámetros para la propiedad flex de cada caja. El primer
+parámetro de todas las cajas (flex-grow) se ha definido con el valor 1, declarando la misma
+proporción de expansión. La diferencia se determina por el agregado de los valores para los
+parámetros flex-shrink y flex-basis. El parámetro flex-shrink trabaja como flexgrow,
+pero determina la proporción en la que las cajas se reducirán para caber en el espacio
+disponible. En nuestro ejemplo, el valor de este parámetro es 1 para el elemento caja-1 y 5
+para el resto de las cajas, lo cual asignará más espacio a caja-1. El parámetro flex-basis, por
+otro lado, establece un valor inicial para el elemento. Por lo tanto, el valor del parámetro flexbasis
+se considera para calcular cuánto se expandirá o reducirá un elemento flexible. Cuando
+este valor es 0 o no se declara, el valor considerado es el tamaño del contenido del elemento.*/
+
+/*IMPORTANTE: el valor 0 asignado a los parámetros flex-grow o flexshrink
+no permite que el elemento se expanda o reduzca,
+respectivamente. Para declarar flexibilidad, los valores de estos parámetros
+deben ser iguales o mayores que 1.*/

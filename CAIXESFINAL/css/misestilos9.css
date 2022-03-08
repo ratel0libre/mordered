@@ -1,0 +1,52 @@
+/*Otra propiedad que puede ayudarnos a distribuir espacio es align-items. Esta propiedad
+trabaja como justify-content pero alinea las cajas en el eje transversal. Esta característica
+logra que la propiedad sea apropiada para realizar una alineación vertical.*/
+/*Debido a que asignamos el valor center a la propiedad align-items, este
+espacio se distribuye hacia el extremo superior e inferior*/
+
+#cajapadre {
+display: flex;
+width: 600px;
+height: 200px;
+border: 1px solid;
+align-items: center;
+}
+/*Valores posibles a continuación*/
+/*align-items: flex-start;*/
+                          /*el valor flex-start para alinear las cajas al comienzo de
+                            la línea, el cual queda determinado por la orientación del contenedor (normalmente el
+                            extremo izquierdo o superior).*/
+/*align-items: flex-end;*/ /*flex-end alinea las cajas hacia el final del contenedor (normalmente el extremo
+                            derecho o inferior).*/
+/*align-items: baseline;*/
+/*align-items: stretch;*/
+/*Esta característica es extremadamente útil cuando nuestro diseño presenta columnas con
+diferente contenido. Si dejamos que el contenido determine la altura, una columna será más
+corta que la otra. Asignando el valor stretch a la propiedad align-items, las columnas más
+cortas se estiran para coincidir con las más largas.*/
+
+
+#cajapadre > div {
+height: 145px;
+margin: 5px;
+background-color: #CCCCCC;
+}
+#caja-1 {
+flex: 1;
+}
+#caja-2 {
+flex: 1;
+}
+#caja-3 {
+flex: 1;
+}
+#caja-4 {
+flex: 1;
+}
+
+/*Los valores disponibles para la propiedad align-items son flex-start, flex-end,
+center, baseline y stretch. El último valor estira las cajas desde el extremo superior al
+inferior para adaptarlas al espacio disponible. Esta característica es tan importante que el valor
+stretch se declara por defecto para todos los contenedores flexibles. El efecto que logra el
+valor stretch es que, cada vez que no se declara la altura de las cajas, estas adoptan
+automáticamente el tamaño de sus elementos padre.*/
